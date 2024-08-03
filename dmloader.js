@@ -205,9 +205,9 @@ var FileLoader = {
 
 
 var EngineLoader = {
-    wasm_size: 2000000,
-    wasmjs_size: 250000,
-    asmjs_size: 5011281,
+    wasm_size: 2808927,
+    wasmjs_size: 340283,
+    asmjs_size: 5674624,
     wasm_instantiate_progress: 0,
 
     stream_wasm: "false" === "true",
@@ -1020,7 +1020,6 @@ Module["locateFile"] = function(path, scriptDirectory)
     return scriptDirectory + path;
 };
 
-Module["isWASMSupported"] = false; 
 
 window.onerror = function(err, url, line, column, errObj) {
     if (typeof Module.ccall !== 'undefined') {
